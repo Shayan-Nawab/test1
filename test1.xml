@@ -24,7 +24,30 @@
                       </block>
                     </value>
                     <next>
-                      <block type="movement_stop" id="757"></block>
+                      <block type="movement_stop" id="757">
+                        <next>
+                          <block type="comment_comment" id="880">
+                            <field name="TEXT">Second one:</field>
+                            <next>
+                              <block type="movement_setmotors" id="965" inline="true">
+                                <value name="BOTHMOVLEFT">
+                                  <block type="math_number" id="972">
+                                    <field name="NUM">3000</field>
+                                  </block>
+                                </value>
+                                <value name="BOTHMOVRIGHT">
+                                  <block type="math_number" id="985">
+                                    <field name="NUM">3000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="movement_stop" id="1009"></block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </next>
