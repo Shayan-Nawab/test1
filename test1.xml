@@ -38,9 +38,9 @@
                               </block>
                             </value>
                             <next>
-                              <block type="movement_stop" id="1533">
+                              <block type="movement_stutter" id="1509">
                                 <next>
-                                  <block type="movement_stutter" id="1509"></block>
+                                  <block type="movement_stop" id="1533"></block>
                                 </next>
                               </block>
                             </next>
