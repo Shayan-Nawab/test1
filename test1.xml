@@ -29,7 +29,22 @@
                       </block>
                     </value>
                     <next>
-                      <block type="movement_stop" id="212"></block>
+                      <block type="movement_stop" id="212">
+                        <next>
+                          <block type="movement_leftmotor" id="349" inline="true">
+                            <value name="MOVLEFT">
+                              <block type="sensor_spectrometer" id="478">
+                                <field name="LIGHT">YELLOW</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="oled_color" id="416">
+                                <field name="OBJECT">BLACK</field>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </next>
