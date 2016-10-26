@@ -58,4 +58,7 @@
       </block>
     </statement>
   </block>
+  <block type="multimedia_playwav" id="304" x="-287" y="288">
+    <field name="WAV"></field>
+  </block>
 </xml>
