@@ -52,33 +52,37 @@
                                           </block>
                                         </value>
                                         <next>
-                                          <block type="robot_delay" id="1328" inline="true">
-                                            <value name="DELAY">
-                                              <block type="math_number" id="1356">
-                                                <field name="NUM">99</field>
-                                              </block>
-                                            </value>
+                                          <block type="oled_cleardisplay" id="1422">
                                             <next>
-                                              <block type="led_select" id="1387" inline="true">
-                                                <field name="ACTION">ON</field>
-                                                <value name="LED">
-                                                  <block type="sensor_spectrometer" id="1403">
-                                                    <field name="LIGHT">RED</field>
+                                              <block type="robot_delay" id="1328" inline="true">
+                                                <value name="DELAY">
+                                                  <block type="math_number" id="1356">
+                                                    <field name="NUM">99</field>
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="robot_delay" id="1405" inline="true">
-                                                    <value name="DELAY">
-                                                      <block type="math_number" id="1413">
-                                                        <field name="NUM">300</field>
+                                                  <block type="led_select" id="1387" inline="true">
+                                                    <field name="ACTION">ON</field>
+                                                    <value name="LED">
+                                                      <block type="sensor_spectrometer" id="1403">
+                                                        <field name="LIGHT">RED</field>
                                                       </block>
                                                     </value>
                                                     <next>
-                                                      <block type="movement_forward" id="1257">
+                                                      <block type="robot_delay" id="1405" inline="true">
+                                                        <value name="DELAY">
+                                                          <block type="math_number" id="1413">
+                                                            <field name="NUM">300</field>
+                                                          </block>
+                                                        </value>
                                                         <next>
-                                                          <block type="movement_stutter" id="1292">
+                                                          <block type="movement_forward" id="1257">
                                                             <next>
-                                                              <block type="movement_stop" id="1303"></block>
+                                                              <block type="movement_stutter" id="1292">
+                                                                <next>
+                                                                  <block type="movement_stop" id="1303"></block>
+                                                                </next>
+                                                              </block>
                                                             </next>
                                                           </block>
                                                         </next>
