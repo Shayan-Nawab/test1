@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="557" x="-81" y="-122">
+  <block type="movement_forward" id="557" x="-218" y="-120">
     <next>
       <block type="robot_delay" id="568" inline="true">
         <value name="DELAY">
@@ -26,80 +26,17 @@
                     <next>
                       <block type="movement_stop" id="757">
                         <next>
-                          <block type="comment_comment" id="880">
-                            <field name="TEXT">Second one:</field>
-                            <next>
-                              <block type="led_select" id="1068" inline="true">
-                                <field name="ACTION">ON</field>
-                                <value name="LED">
-                                  <block type="sensor_spectrometer" id="1130">
-                                    <field name="LIGHT">BLUE</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="robot_delay" id="1175" inline="true">
-                                    <value name="DELAY">
-                                      <block type="math_number" id="1182">
-                                        <field name="NUM">100</field>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block type="led_select" id="1145" inline="true">
-                                        <field name="ACTION">ON</field>
-                                        <value name="LED">
-                                          <block type="sensor_spectrometer" id="1235">
-                                            <field name="LIGHT">GREEN</field>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="oled_cleardisplay" id="1422">
-                                            <next>
-                                              <block type="robot_delay" id="1328" inline="true">
-                                                <value name="DELAY">
-                                                  <block type="math_number" id="1356">
-                                                    <field name="NUM">99</field>
-                                                  </block>
-                                                </value>
-                                                <next>
-                                                  <block type="led_select" id="1387" inline="true">
-                                                    <field name="ACTION">ON</field>
-                                                    <value name="LED">
-                                                      <block type="sensor_spectrometer" id="1403">
-                                                        <field name="LIGHT">RED</field>
-                                                      </block>
-                                                    </value>
-                                                    <next>
-                                                      <block type="robot_delay" id="1405" inline="true">
-                                                        <value name="DELAY">
-                                                          <block type="math_number" id="1413">
-                                                            <field name="NUM">300</field>
-                                                          </block>
-                                                        </value>
-                                                        <next>
-                                                          <block type="movement_forward" id="1257">
-                                                            <next>
-                                                              <block type="movement_stutter" id="1292">
-                                                                <next>
-                                                                  <block type="movement_stop" id="1303"></block>
-                                                                </next>
-                                                              </block>
-                                                            </next>
-                                                          </block>
-                                                        </next>
-                                                      </block>
-                                                    </next>
-                                                  </block>
-                                                </next>
-                                              </block>
-                                            </next>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </next>
+                          <block type="movement_setmotors" id="1443" inline="true">
+                            <value name="BOTHMOVLEFT">
+                              <block type="math_number" id="1450">
+                                <field name="NUM">200</field>
                               </block>
-                            </next>
+                            </value>
+                            <value name="BOTHMOVRIGHT">
+                              <block type="math_number" id="1457">
+                                <field name="NUM">200</field>
+                              </block>
+                            </value>
                           </block>
                         </next>
                       </block>
