@@ -33,8 +33,8 @@
                         <next>
                           <block type="movement_leftmotor" id="349" inline="true">
                             <value name="MOVLEFT">
-                              <block type="sensor_spectrometer" id="478">
-                                <field name="LIGHT">YELLOW</field>
+                              <block type="math_number" id="500">
+                                <field name="NUM">901</field>
                               </block>
                             </value>
                             <next>
