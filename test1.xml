@@ -1,45 +1,52 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="51" x="5" y="-36">
-    <next>
-      <block type="robot_delay" id="76" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="83">
-            <field name="NUM">3000</field>
-          </block>
-        </value>
+  <block type="controls_repeat" id="532" inline="true" x="-32" y="-74">
+    <value name="TIMES">
+      <block type="math_random" id="545"></block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="51">
         <next>
-          <block type="movement_stop" id="107">
+          <block type="robot_delay" id="76" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="83">
+                <field name="NUM">3000</field>
+              </block>
+            </value>
             <next>
-              <block type="movement_reverse" id="131">
+              <block type="movement_stop" id="107">
                 <next>
-                  <block type="robot_delay" id="148" inline="true">
-                    <value name="DELAY">
-                      <block type="math_arithmetic" id="155" inline="true">
-                        <field name="OP">ADD</field>
-                        <value name="A">
-                          <block type="math_number" id="162">
-                            <field name="NUM">1000</field>
-                          </block>
-                        </value>
-                        <value name="B">
-                          <block type="math_number" id="187">
-                            <field name="NUM">2000</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
+                  <block type="movement_reverse" id="131">
                     <next>
-                      <block type="movement_stop" id="212">
-                        <next>
-                          <block type="movement_leftmotor" id="349" inline="true">
-                            <value name="MOVLEFT">
-                              <block type="math_number" id="500">
-                                <field name="NUM">901</field>
+                      <block type="robot_delay" id="148" inline="true">
+                        <value name="DELAY">
+                          <block type="math_arithmetic" id="155" inline="true">
+                            <field name="OP">ADD</field>
+                            <value name="A">
+                              <block type="math_number" id="162">
+                                <field name="NUM">1000</field>
                               </block>
                             </value>
+                            <value name="B">
+                              <block type="math_number" id="187">
+                                <field name="NUM">2000</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_stop" id="212">
                             <next>
-                              <block type="oled_color" id="416">
-                                <field name="OBJECT">BLACK</field>
+                              <block type="movement_leftmotor" id="349" inline="true">
+                                <value name="MOVLEFT">
+                                  <block type="math_number" id="500">
+                                    <field name="NUM">180</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_color" id="416">
+                                    <field name="OBJECT">BLACK</field>
+                                  </block>
+                                </next>
                               </block>
                             </next>
                           </block>
@@ -53,6 +60,6 @@
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
