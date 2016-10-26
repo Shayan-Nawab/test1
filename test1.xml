@@ -26,27 +26,7 @@
                     <next>
                       <block type="movement_stop" id="757">
                         <next>
-                          <block type="movement_forward" id="1543">
-                            <next>
-                              <block type="movement_forward" id="1555">
-                                <next>
-                                  <block type="movement_forward" id="1566">
-                                    <next>
-                                      <block type="movement_forward" id="1577">
-                                        <next>
-                                          <block type="movement_forward" id="1588">
-                                            <next>
-                                              <block type="movement_stop" id="1598"></block>
-                                            </next>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
+                          <block type="movement_forward" id="1543"></block>
                         </next>
                       </block>
                     </next>
