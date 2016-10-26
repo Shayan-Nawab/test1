@@ -10,27 +10,14 @@
         <next>
           <block type="movement_stop" id="620">
             <next>
-              <block type="movement_leftmotor" id="653" inline="true">
-                <value name="MOVLEFT">
-                  <block type="math_number" id="714">
-                    <field name="NUM">180</field>
+              <block type="robot_delay" id="1617" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="1657">
+                    <field name="NUM">90</field>
                   </block>
                 </value>
                 <next>
-                  <block type="robot_delay" id="733" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="740">
-                        <field name="NUM">50</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="movement_stop" id="757">
-                        <next>
-                          <block type="movement_forward" id="1543"></block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
+                  <block type="movement_forward" id="1615"></block>
                 </next>
               </block>
             </next>
