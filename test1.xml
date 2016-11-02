@@ -1,46 +1,46 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="557" x="-218" y="-120">
+  <block type="movement_forward" id="1" x="-218" y="-120">
     <next>
-      <block type="robot_delay" id="568" inline="true">
+      <block type="robot_delay" id="2" inline="true">
         <value name="DELAY">
-          <block type="math_number" id="608">
+          <block type="math_number" id="3">
             <field name="NUM">3000</field>
           </block>
         </value>
         <next>
-          <block type="movement_stop" id="620">
+          <block type="movement_stop" id="4">
             <next>
-              <block type="robot_delay" id="1617" inline="true">
+              <block type="robot_delay" id="5" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="1657">
+                  <block type="math_number" id="6">
                     <field name="NUM">90</field>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_leftmotor" id="1674" inline="true">
+                  <block type="movement_leftmotor" id="7" inline="true">
                     <value name="MOVLEFT">
-                      <block type="math_number" id="1681">
+                      <block type="math_number" id="8">
                         <field name="NUM">60</field>
                       </block>
                     </value>
                     <next>
-                      <block type="movement_rightmotor" id="1823" inline="true">
+                      <block type="movement_rightmotor" id="9" inline="true">
                         <value name="MOVRIGHT">
-                          <block type="math_number" id="1830">
+                          <block type="math_number" id="10">
                             <field name="NUM">60</field>
                           </block>
                         </value>
                         <next>
-                          <block type="movement_leftmotor" id="1856" inline="true">
+                          <block type="movement_leftmotor" id="11" inline="true">
                             <value name="MOVLEFT">
-                              <block type="math_number" id="1878">
+                              <block type="math_number" id="12">
                                 <field name="NUM">60</field>
                               </block>
                             </value>
                             <next>
-                              <block type="movement_rightmotor" id="1915" inline="true">
+                              <block type="movement_rightmotor" id="13" inline="true">
                                 <value name="MOVRIGHT">
-                                  <block type="math_number" id="1922">
+                                  <block type="math_number" id="14">
                                     <field name="NUM">60</field>
                                   </block>
                                 </value>
